@@ -1,0 +1,61 @@
+* {
+    /* box-sizing: border-box;
+    border: 1px solid red;
+    background: url(https://ssl.gstatic.com/gb/images/i1_1967ca6a.png); */   
+}   
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    padding: 1.5em;
+}
+
+#nav-right {
+    margin-left: auto;
+}
+
+a {
+    color: black;
+    font-size: 13px;
+    text-decoration: none;
+    padding: 0.5em;
+}
+
+main { 
+    margin-top: 15vh;
+}
+
+.google-logo {
+    display: block;
+    margin: 0 auto;
+}
+
+#search-container {
+    margin: 24px auto;
+    padding: 0.4em;
+    border: 1px solid #d2d2d2;
+    border-radius: 50px;
+    width: 24vw;
+    display: flex;
+    justify-content: stretch;
+}
+
+#search-icon {
+    margin: 0;
+    padding: 0.4em;
+}
+
+#search-field {
+    justify-self: auto;
+    border-radius: 0px;
+    border: 0;
+    font-size: 16px;
+    flex-grow: 1;
+}
+
