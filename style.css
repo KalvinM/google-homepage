@@ -27,6 +27,25 @@ a {
     padding: 0.5em;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
+#google-apps-button {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: middle;
+    background: url(https://ssl.gstatic.com/gb/images/i1_1967ca6a.png) -132px -38px;
+    background-size: 528px 68px;
+    width: 30px;
+    height: 30px;
+    opacity: 50%;
+}
+
+#google-apps-button:hover {
+    opacity: 100%;
+}
+
 main { 
     margin-top: 15vh;
 }
