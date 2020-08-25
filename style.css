@@ -75,21 +75,20 @@ main {
     padding: 0.25em 0.4em;
     border: 1px solid #d2d2d2;
     border-radius: 50px;
-    /* Todo: Adjust width of search container using media queries?? */
-    width: 512px;
+    min-width: 256px;
+    max-width: 512px;
     display: flex;
     justify-content: stretch;
 }
 
-#search-icon {
+#search-icon {    
     display: inline-block;
     margin: 0;
-    background: url(https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png) no-repeat;
-    background-origin: content-box;
-    background-size: 24px;
     width: 24px;
     height: 24px;
     padding: 0.4em;
+    justify-content: center;
+    align-items: center;
 }
 
 #search-field {
@@ -134,4 +133,20 @@ main {
 #search-buttons input:active {
     border: 1px solid #4485f5;
 }
+
+footer {
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 0.5em;
+    position: absolute;
+    bottom: 0;
+    background-color: #f2f2f2;
+}
+
+footer a {
+    display: inline-block;
+    color: #5F6368;
+}
+
 
