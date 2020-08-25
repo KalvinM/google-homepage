@@ -1,26 +1,28 @@
 * {
-    /* box-sizing: border-box;
-    border: 1px solid red;
-    background: url(https://ssl.gstatic.com/gb/images/i1_1967ca6a.png); */   
-}   
+    font-family: sans-serif;
+}
 
 body {
-    font-family: Arial, sans-serif;
     padding: 0;
     margin: 0;
 }
 
 header {
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    padding: 1.5em;
+    padding: 1em 1.5em;
+    flex-wrap: nowrap;    
+    user-select: none;
 }
+
 
 #nav-right {
     margin-left: auto;
 }
 
 a {
+    display: inline-block;
     color: black;
     font-size: 13px;
     text-decoration: none;
@@ -46,8 +48,21 @@ a:hover {
     opacity: 100%;
 }
 
+#signin-button {
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: 2px;
+    padding: 0.6em 1em;
+    background-color: #4485f5;
+    color: white;
+    margin-left: 0.75em;
+    margin-right: 0.75em;
+    text-decoration: none;
+}
+
+
 main { 
-    margin-top: 15vh;
+    margin-top: 12vh;
 }
 
 .google-logo {
@@ -55,18 +70,25 @@ main {
     margin: 0 auto;
 }
 
-#search-container {
+#search-container {    
     margin: 24px auto;
-    padding: 0.4em;
+    padding: 0.25em 0.4em;
     border: 1px solid #d2d2d2;
     border-radius: 50px;
-    width: 24vw;
+    /* Todo: Adjust width of search container using media queries?? */
+    width: 512px;
     display: flex;
     justify-content: stretch;
 }
 
 #search-icon {
+    display: inline-block;
     margin: 0;
+    background: url(https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png) no-repeat;
+    background-origin: content-box;
+    background-size: 24px;
+    width: 24px;
+    height: 24px;
     padding: 0.4em;
 }
 
@@ -76,5 +98,40 @@ main {
     border: 0;
     font-size: 16px;
     flex-grow: 1;
+}
+
+#search-voice {
+    display: inline-block;    
+    background: url(https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png) no-repeat;
+    background-origin: content-box;
+    background-size: 24px;
+    width: 24px;
+    height: 24px;
+    padding: 0.4em;
+}
+
+#search-buttons{
+    display: flex;
+    justify-content: center;
+}
+
+#search-buttons input {
+    margin: 0 0.5em;
+    padding: 0.5em 0.75em;
+    border: 1px solid #f4f4f4;
+    border-radius: 4px;
+    background-color: #f4f4f4;
+    color: #5F6368;
+    font-size: 14px;
+}
+
+#search-buttons input:hover {
+    background: linear-gradient(to bottom, #f5f5f5, #f1f1f1);
+    border: 1px solid #ddd;
+    color: #222;
+}
+
+#search-buttons input:active {
+    border: 1px solid #4485f5;
 }
 
