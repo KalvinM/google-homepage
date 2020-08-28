@@ -103,6 +103,7 @@ main {
 
 #search-field:focus {
     border: 0;
+    outline: none;
 }
 
 #search-voice {
