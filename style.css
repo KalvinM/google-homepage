@@ -63,6 +63,7 @@ a:hover {
 
 main { 
     margin-top: 12vh;
+    padding: 0 2em;
 }
 
 .google-logo {
@@ -97,6 +98,7 @@ main {
     border: 0;
     font-size: 16px;
     flex-grow: 1;
+    min-width: 32px;
 }
 
 #search-voice {
@@ -149,4 +151,19 @@ footer {
 footer a {
     display: inline-block;
     color: #5F6368;
+}
+
+
+@media (max-width:400px) {
+    header {
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 640px) {
+    footer {
+        flex-direction: column-reverse;      
+        align-items: center;
+    }
+
 }
