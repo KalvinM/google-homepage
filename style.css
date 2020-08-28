@@ -101,7 +101,7 @@ main {
     min-width: 32px;
 }
 
-#search-field:focus {
+input:focus {
     border: 0;
     outline: none;
 }
